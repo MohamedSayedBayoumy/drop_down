@@ -85,7 +85,7 @@ class _Dropdown<T> extends StatelessWidget {
               borderRadius: decoration.borderRadius,
               color: decoration.backgroundColor,
               backgroundBlendMode: BlendMode.dstATop,
-              border: Border(
+              border: Border( // here border
                 left: BorderSide(color: decoration.borderSide!.color),
                 right: BorderSide(color: decoration.borderSide!.color),
                 bottom: BorderSide(color: decoration.borderSide!.color),
@@ -160,7 +160,7 @@ class _Dropdown<T> extends StatelessWidget {
             ? dropdownItemDecoration.selectedBackgroundColor
             : dropdownItemDecoration.backgroundColor;
 
-    final trailing = option.selected
+    final trailing = option.selected // here icon switch
         ? dropdownItemDecoration.selectedIcon
         : dropdownItemDecoration.disabledIcon;
 
